@@ -2,7 +2,9 @@
     <string name="app_name">Ex07</string>
     <string name="change">change</string>
     <string name="yellow">Yellow</string>
-    <string name="brown">Brown</string>
+    <string name="red">Red</string>
     <string name="blue">Blue</string>
     <string name="green">Green</string>
+    <string name="change_with_the_button">change with the button</string>
+    <string name="change_immediately">change immediately</string>
 </resources>
