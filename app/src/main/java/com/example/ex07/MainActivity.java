@@ -24,11 +24,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rB1 = findViewById(R.id.rB1);
-        rB2 = findViewById(R.id.rB2);
-        rB3 = findViewById(R.id.rB3);
+        rG = findViewById(R.id.rG);
         switcH = findViewById(R.id.switcH);
         screen = findViewById(R.id.screen);
+
+        if (switcH.isChecked()){
+            celetedId = rG.getCheckedRadioButtonId();
+            switch (celetedId) {
+                case R.id.rB1: {
+                    screen.setBackgroundColor(Color.GREEN);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rB2: {
+                    screen.setBackgroundColor(Color.BLUE);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rB3: {
+                    screen.setBackgroundColor(Color.YELLOW);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rB4: {
+                    screen.setBackgroundColor(Color.RED);
+                    rG.clearCheck();
+                }
+                break;
+            }
+        }
     }
 
     public void change(View view) {
@@ -58,9 +85,6 @@ public class MainActivity extends AppCompatActivity {
                     rG.clearCheck();
                 }
                 break;
-
-                default:{
-                }
             }
         }
     }
