@@ -12,7 +12,7 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioButton rB1, rB2, rB3;
+    RadioButton rBGreen, rB2, rB3;
     Switch switcH;
     LinearLayout screen;
     RadioGroup rG;
@@ -28,59 +28,31 @@ public class MainActivity extends AppCompatActivity {
         switcH = findViewById(R.id.switcH);
         screen = findViewById(R.id.screen);
 
-        if (switcH.isChecked()){
-            celetedId = rG.getCheckedRadioButtonId();
-            switch (celetedId) {
-                case R.id.rB1: {
-                    screen.setBackgroundColor(Color.GREEN);
-                    rG.clearCheck();
-                }
-                break;
-
-                case R.id.rB2: {
-                    screen.setBackgroundColor(Color.BLUE);
-                    rG.clearCheck();
-                }
-                break;
-
-                case R.id.rB3: {
-                    screen.setBackgroundColor(Color.YELLOW);
-                    rG.clearCheck();
-                }
-                break;
-
-                case R.id.rB4: {
-                    screen.setBackgroundColor(Color.RED);
-                    rG.clearCheck();
-                }
-                break;
-            }
-        }
     }
 
-    public void change(View view) {
+    public void changeWithButton(View view) {
         if (!(switcH.isChecked())){
             celetedId = rG.getCheckedRadioButtonId();
             switch (celetedId){
-                case R.id.rB1:{
+                case R.id.rBGreen:{
                     screen.setBackgroundColor(Color.GREEN);
                     rG.clearCheck();
                 }
                 break;
 
-                case R.id.rB2:{
+                case R.id.rBBlue:{
                     screen.setBackgroundColor(Color.BLUE);
                     rG.clearCheck();
                 }
                 break;
 
-                case R.id.rB3:{
+                case R.id.rBYellow:{
                     screen.setBackgroundColor(Color.YELLOW);
                     rG.clearCheck();
                 }
                 break;
 
-                case R.id.rB4:{
+                case R.id.rBRed:{
                     screen.setBackgroundColor(Color.RED);
                     rG.clearCheck();
                 }
@@ -89,4 +61,34 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void changeImmediately(View view) {
+        if (switcH.isChecked()){
+            celetedId = rG.getCheckedRadioButtonId();
+            switch (celetedId) {
+                case R.id.rBGreen: {
+                    screen.setBackgroundColor(Color.GREEN);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rBBlue: {
+                    screen.setBackgroundColor(Color.BLUE);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rBYellow: {
+                    screen.setBackgroundColor(Color.YELLOW);
+                    rG.clearCheck();
+                }
+                break;
+
+                case R.id.rBRed: {
+                    screen.setBackgroundColor(Color.RED);
+                    rG.clearCheck();
+                }
+                break;
+            }
+        }
+    }
 }
