@@ -36,25 +36,21 @@ public class MainActivity extends AppCompatActivity {
             switch (celetedId){
                 case R.id.rBGreen:{
                     screen.setBackgroundColor(Color.GREEN);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBBlue:{
                     screen.setBackgroundColor(Color.BLUE);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBYellow:{
                     screen.setBackgroundColor(Color.YELLOW);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBRed:{
                     screen.setBackgroundColor(Color.RED);
-                    rG.clearCheck();
                 }
                 break;
             }
@@ -67,25 +63,21 @@ public class MainActivity extends AppCompatActivity {
             switch (celetedId) {
                 case R.id.rBGreen: {
                     screen.setBackgroundColor(Color.GREEN);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBBlue: {
                     screen.setBackgroundColor(Color.BLUE);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBYellow: {
                     screen.setBackgroundColor(Color.YELLOW);
-                    rG.clearCheck();
                 }
                 break;
 
                 case R.id.rBRed: {
                     screen.setBackgroundColor(Color.RED);
-                    rG.clearCheck();
                 }
                 break;
             }
