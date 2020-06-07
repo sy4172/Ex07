@@ -86,32 +86,32 @@
 
                     <RadioButton
                         android:id="@+id/rBGreen"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="0"
                         android:layout_weight="1"
                         android:onClick="changeImmediately"
                         android:text="@string/green" />
 
                     <RadioButton
                         android:id="@+id/rBBlue"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="0"
                         android:layout_weight="1"
                         android:onClick="changeImmediately"
                         android:text="@string/blue" />
 
                     <RadioButton
                         android:id="@+id/rBYellow"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="0"
                         android:layout_weight="1"
                         android:onClick="changeImmediately"
                         android:text="@string/yellow" />
 
                     <RadioButton
                         android:id="@+id/rBRed"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="0"
                         android:layout_weight="1"
                         android:onClick="changeImmediately"
                         android:text="@string/red" />

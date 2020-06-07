@@ -12,7 +12,6 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    RadioButton rBGreen, rB2, rB3;
     Switch switcH;
     LinearLayout screen;
     RadioGroup rG;
